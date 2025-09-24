@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Waifu MarketLT — 0.4.3</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Fondo y contenedor principal -->
+  <div class="bg-layer"></div>
+  <main class="app">
+    <!-- Modal para activar música -->
+    <div id="music-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-window">
+        <h2 id="modal-title">¿Activar música?</h2>
+        <p>Esta web tiene música de fondo. Pulsa Aceptar para activarla.</p>
+        <button id="accept-music" class="btn-accept">Aceptar</button>
+      </div>
+    </div>
+
+    <!-- Header/logo central -->
+    <header class="hero">
+      <div class="logo-circle">
+        <img src="icono.jpg" alt="Logo Waifu MarketLT" />
+      </div>
+      <h1 class="app-title">Waifu MarketLT</h1>
+      <p class="tagline">Tienda · Foros · Chat · Cuentas · Música</p>
+    </header>
+
+    <!-- Información principal (LED cards) -->
+    <section class="info-cards">
+      <div class="card led">
+        <h3>Nombre</h3>
+        <p>Waifu MarketLT</p>
+      </div>
+      <div class="card led">
+        <h3>Versión</h3>
+        <p>0.4.3</p>
+      </div>
+      <div class="card led">
+        <h3>Creador</h3>
+        <p>Waifu Eminenc</p>
+      </div>
+      <div class="card led">
+        <h3>Estado</h3>
+        <p>Activo</p>
+      </div>
+    </section>
+
+    <section class="more">
+      <div class="box led big">
+        <h4>Últimas implementos</h4>
+        <ul>
+          <li>Agregación de Foros</li>
+          <li>Desarrollo de secciones</li>
+        </ul>
+      </div>
+
+      <div class="box led big">
+        <h4>Descripción</h4>
+        <p>Waifu MarketLT es una tienda y comunidad para vender y compartir: cuentas, ítems, juegos, música, grupos, chat y foros. Totalmente Seguro .</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>© Waifu MarketLT · v0.4.3</small>
+    </footer>
+  </main>
+
+  <!-- Audio (oculto) -->
+  <audio id="bg-audio" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
