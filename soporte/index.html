@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Soporte — Waifu MarketLT</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Fondo y contenedor principal -->
+  <div class="bg-layer"></div>
+  <main class="app">
+    <!-- Modal para activar música -->
+    <div id="music-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-window">
+        <h2 id="modal-title">¿Activar música?</h2>
+        <p>Esta sección tiene música de fondo. Pulsa Aceptar para activarla.</p>
+        <button id="accept-music" class="btn-accept">Aceptar</button>
+      </div>
+    </div>
+
+    <!-- Header/logo central -->
+    <header class="hero">
+      <div class="logo-circle">
+        <img src="icono.jpg" alt="Logo Soporte Waifu MarketLT" />
+      </div>
+      <h1 class="app-title">Soporte Waifu MarketLT</h1>
+      <p class="tagline">Asistencia · Ayuda · Contacto</p>
+    </header>
+
+    <!-- Información principal (LED cards) -->
+    <section class="info-cards">
+      <div class="card led">
+        <h3>Creador</h3>
+        <p>Waifu Eminenc</p>
+      </div>
+      <div class="card led">
+        <h3>Modo</h3>
+        <p>Soporte</p>
+      </div>
+      <div class="card led">
+        <h3>Horas</h3>
+        <p>24 h</p>
+      </div>
+      <div class="card led">
+        <h3>Contacto</h3>
+        <p>Disponible</p>
+      </div>
+    </section>
+
+    <section class="more">
+      <div class="box led big">
+        <h4>Acerca del Soporte</h4>
+        <p>Estamos aquí para ayudarte con dudas, problemas o sugerencias sobre Waifu MarketLT.
+        Nuestro equipo responde rápidamente y está disponible todo el día. 💙</p>
+      </div>
+
+      <div class="box led big actions">
+        <h4>Contacta con nosotros</h4>
+        <button class="btn-contact" id="btn-whatsapp">WhatsApp</button>
+        <button class="btn-contact" id="btn-email">Correo</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>© Soporte Waifu MarketLT · Siempre en línea</small>
+    </footer>
+  </main>
+
+  <!-- Audio (oculto) -->
+  <audio id="bg-audio" loop preload="auto">
+    <source src="musica.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
