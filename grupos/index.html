@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grupos WhatsApp - Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Fondo -->
+  <div class="overlay"></div>
+  <main class="container">
+    <!-- Icono central -->
+    <header class="hero">
+      <div class="icon-circle">
+        <img src="icono.jpg" alt="Icono"/>
+      </div>
+      <h1 class="title">Grupos WhatsApp</h1>
+      <p class="subtitle">Elige un Grupo y Unete</p>
+    </header>
+
+    <!-- Grid de grupos -->
+    <section class="groups" aria-label="Lista de grupos">
+
+      <!-- Grupo 1 -->
+      <article class="group-card">
+        <img src="1grupo.jpg" alt="Minecraft Realms" class="group-img"/>
+        <h3>Minecraft Realms</h3>
+        <div class="card-actions">
+          <button class="btn more" data-group="1">Más</button>
+        </div>
+      </article>
+
+      <!-- Grupo 2 -->
+      <article class="group-card">
+        <img src="2grupo.jpg" alt="Transmisiones Anime" class="group-img"/>
+        <h3>Transmisiones Anime</h3>
+        <div class="card-actions">
+          <button class="btn more" data-group="2">Más</button>
+        </div>
+      </article>
+
+      <!-- Grupo 3 -->
+      <article class="group-card">
+        <img src="3grupo.jpg" alt="Team Wplace" class="group-img"/>
+        <h3>Team Wplace</h3>
+        <div class="card-actions">
+          <button class="btn more" data-group="3">Más</button>
+        </div>
+      </article>
+
+      <!-- VIP -->
+      <article class="group-card vip">
+        <img src="vipgrupo.jpg" alt="Crunchyroll Account (VIP)" class="group-img"/>
+        <h3>Crunchyroll Account (VIP)</h3>
+        <div class="card-actions">
+          <button class="btn more vip-btn" data-group="vip">VIP</button>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- Modal para música de fondo (consentimiento) -->
+  <div id="music-modal" class="modal show">
+    <div class="modal-card">
+      <h2>Activar música de fondo</h2>
+      <p>¿Deseas activar la música de fondo para una mejor experiencia?</p>
+      <div class="modal-actions">
+        <button id="music-accept" class="btn">Sí, activar</button>
+        <button id="music-decline" class="btn ghost">No, gracias</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal genérico para descripcion de grupo -->
+  <div id="group-modal" class="modal">
+    <div class="modal-card">
+      <button class="close-modal" aria-label="Cerrar">✕</button>
+      <div id="group-content"></div>
+    </div>
+  </div>
+
+  <!-- Audio (oculto) -->
+  <audio id="bg-audio" loop src="musica.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
